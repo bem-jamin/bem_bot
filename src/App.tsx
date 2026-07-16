@@ -11,7 +11,7 @@ function App() {
 
   return (
     <StoreProvider>
-      <div className="mx-auto max-w-md">
+      <div className="mx-auto max-w-md" style={{ paddingTop: 'calc(env(safe-area-inset-top) + 12px)' }}>
         {screen === 'home' && <Home />}
         {screen === 'recurring' && <Recurring />}
         {screen === 'transactions' && <Transactions />}
